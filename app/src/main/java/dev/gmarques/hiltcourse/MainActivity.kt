@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
 import dev.gmarques.hiltcourse.database.DatabaseAdapter
+import dev.gmarques.hiltcourse.database.DatabaseAdapterWithActivityContext
 import dev.gmarques.hiltcourse.hilt.qualifiers.CallInterceptor
 import dev.gmarques.hiltcourse.hilt.qualifiers.NetworkAdapterBing
 import dev.gmarques.hiltcourse.hilt.qualifiers.NetworkAdapterGoogle
@@ -59,6 +60,9 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var callInterceptor: Interceptor
 
+    @Inject
+    lateinit var databaseAdapterWithActivityContext: DatabaseAdapterWithActivityContext
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -83,6 +87,9 @@ class MainActivity : AppCompatActivity() {
         callInterceptor.log("callInterceptor called through a  Qualifier injection")
         responseInterceptor.log("responseInterceptor called through a  Qualifier injection")
 
+        Log.d("USUK", "MainActivity.onCreate: --------------- Injeçao de tipo com contexto de activity injetado ----------------")
+
+        databaseAdapterWithActivityContext.log("")
     }
 
     @Inject

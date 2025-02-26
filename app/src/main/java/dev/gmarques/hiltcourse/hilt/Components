@@ -1,0 +1,13 @@
+Components
+
+Supports the following classes and lifetimes (when each component is available and destroyed):
+
+# Componentname -> when is Created -> when is Destroyed
+
+•  ApplicationComponent -> Application onCreate() -> Application onDestroy()
+•  ActivityComponent ->  Activity onCreate() -> Activity onDestroy()
+•  ActivityRetained Component -> Activity onCreate() -> Activity onDestroy()
+•  FragmentComponent -> Fragment onAttach() -> Fragment onDestroy()
+•  ViewComponent ->  View super() -> View destroyed
+•  ViewWithFragmentComponent  -> View super()  -> View destroyed
+•  ServiceComponent  -> Service onCreate()  -> Service onDestroy()

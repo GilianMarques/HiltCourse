@@ -1,0 +1,4 @@
+# Link do curso: https://www.udemy.com/share/105rXU3@BKXKb407rRPN1S0Etxnwssq6kMYsagpvwe7XOkwUiYq6A4p41dVITM0zdg97Ry5e/
+
+Para entender o projeto, abra a MainActivity e veja o OnCreate(), la tem chamadas para os objetos injetados e cada injeçao
+função e classe tem documentaçã oexplicando mais ou menos a funcionalidade.
