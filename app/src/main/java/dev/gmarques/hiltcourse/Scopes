@@ -1,0 +1,15 @@
+Um Scope define a quantidade de objetos individuais de instancias quando injetamos uma
+dependência com Hilt.
+
+Por padrão as injeções sao 'sem  escopo' ou seja, a cada injeção será criada uma nova instancia daquele objeto.
+
+
+Lista de Scopos e sua anotação correspondente:
+(Component  -> Scope)
+ApplicationComponent  -> @Singleton // um singleton disponivel em toda a aplicação
+ActivityComponent  -> @ActivityScoped // um sigleton disponivel apenas na activity
+ActivityRetainedComponent  -> @ActivityRetainedScope // e por ai vai...
+FragmentComponent  -> @FragmentScoped
+ViewComponent  -> @ViewScoped
+ViewWithFragmentComponent  -> @ViewScoped
+ServiceComponent  -> @ServiceScoped

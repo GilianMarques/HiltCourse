@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         Log.d("USUK", "MainActivity.onCreate: --------------- Injeçao de campo ----------------")
 
         databaseAdapter.log("teste de Injeçao de campo")
